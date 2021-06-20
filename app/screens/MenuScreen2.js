@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { View, Text, Button, FlatList } from 'react-native';
-import MenuItem from '../components/MenuItem';
+import GenreList from '../components/GenreList';
 import { connect } from 'react-redux';
 import { getDishes } from '../redux/actionCreators';
 
@@ -26,10 +26,10 @@ const MenuScreen2 = (props) => {
 
     return (
         <View>
-            <MenuItem item={props.scifi.filter((site) => site.featured)[0]} selectPlace={() => props.navigation.navigate('Science Fiction')} />
-            <MenuItem item={props.history.filter((site) => site.featured)[0]} selectPlace={() => props.navigation.navigate('History')} />
-            <MenuItem item={props.thriller.filter((site) => site.featured)[0]} selectPlace={() => props.navigation.navigate('Thriller')} />
-            <MenuItem item={props.comics.filter((site) => site.featured)[0]} selectPlace={() => props.navigation.navigate('Comics')} />
+            <GenreList item={props.scifi.filter((site) => site.featured)[0]} selectPlace={() => props.navigation.navigate('Science Fiction')} />
+            <GenreList item={props.history.filter((site) => site.featured)[0]} selectPlace={() => props.navigation.navigate('History')} />
+            <GenreList item={props.thriller.filter((site) => site.featured)[0]} selectPlace={() => props.navigation.navigate('Thriller')} />
+            <GenreList item={props.comics.filter((site) => site.featured)[0]} selectPlace={() => props.navigation.navigate('Comics')} />
         </View>
     )
 }

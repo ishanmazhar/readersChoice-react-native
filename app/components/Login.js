@@ -3,7 +3,7 @@ import { View, Text, Button, TextInput, StyleSheet, TouchableOpacity, ImageBackg
 import backgroundImage from '../images/background.jpeg';
 import { tryAuth, removeToken } from '../redux/actionCreators';
 import { connect } from 'react-redux';
-import { useIsFocused } from '@react-navigation/native';
+import { useIsFocused, nav } from '@react-navigation/native';
 
 const mapStateToProps = state => {
     return {
@@ -101,11 +101,12 @@ const Login = props => {
         );
     }
     return (
-        <ImageBackground
-            source={backgroundImage}
-            style={{ width: "100%", flex: 1 }}
-            blurRadius={5}>
+        // <ImageBackground
+        //     source={backgroundImage}
+        //     style={{ width: "100%", flex: 1 }}
+        //     blurRadius={5}>
             <View style={styles.loginView}>
+                <View style={styles.view}><Text style={styles.title}>readersChoice</Text></View>
                 <TouchableOpacity
                     style={{ ...styles.btnContainer, backgroundColor: "#1167b1", width: "85%" }}
                     onPress={
@@ -134,7 +135,7 @@ const Login = props => {
                     <Text style={styles.btnStyle}>{authStates.mode === "login" ? "Login" : "Sign Up"}</Text>
                 </TouchableOpacity>
             </View >
-        </ImageBackground>
+        // </ImageBackground>
 
     );
 }
@@ -169,6 +170,17 @@ const styles = StyleSheet.create({
         marginTop: 10,
         justifyContent: "center",
         alignItems: "center"
+    },
+    view: {
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        marginBottom: 30,
+
+    },
+    title: {
+        fontSize: 50,
+        color: "maroon"
     }
 })
 
