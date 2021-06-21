@@ -34,5 +34,43 @@ export const THRILLER = [
         image: require("../../images/thriller-1.jpg"),
         featured: false,
         description: "Jacob Finch Bonner was once a promising young novelist with a respectably published first book. Today, he's teaching in a third-rate MFA program and struggling to maintain what's left of his self-respect; he hasn't written--let alone published--anything decent in years. When Evan Parker, his most arrogant student, announces he doesn't need Jake's help because the plot of his book in progress is a sure thing, Jake is prepared to dismiss the boast as typical amateur narcissism. But then . . . he hears the plot."
-    }
+    },
+    {
+        id: 4,
+        name: "Incredible Doom",
+        author: "Mathew Bogart & Jesse Holden",
+        genre: "Comics",
+        image: require("../../images/comics-1.jpg"),
+        featured: false,
+        description: "Allison is drowning under the weight of her manipulative stage magician father. When he brings home the family’s first computer, she escapes into a thrilling new world where she meets Samir, a like-minded new online friend who has just agreed to run away from home with her."
+    },
+
+    {
+        id: 5,
+        name: "How to Deal: With Fear, Failure, and Other Daily Dreads",
+        author: "Grace Miceli",
+        genre: "Comics",
+        image: require("../../images/comics-2.jpg"),
+        featured: true,
+        description: "Power through your worst days so you can enjoy the good ones with this 'fight or flight' manual for life (the fake one you live on the internet and the one you actually live)."
+    },
+    {
+        id: 6,
+        name: "Incredible Doom",
+        author: "Mathew Bogart & Jesse Holden",
+        genre: "Comics",
+        image: require("../../images/comics-1.jpg"),
+        featured: false,
+        description: "Allison is drowning under the weight of her manipulative stage magician father. When he brings home the family’s first computer, she escapes into a thrilling new world where she meets Samir, a like-minded new online friend who has just agreed to run away from home with her."
+    },
+
+    {
+        id: 7,
+        name: "How to Deal: With Fear, Failure, and Other Daily Dreads",
+        author: "Grace Miceli",
+        genre: "Comics",
+        image: require("../../images/comics-2.jpg"),
+        featured: true,
+        description: "Power through your worst days so you can enjoy the good ones with this 'fight or flight' manual for life (the fake one you live on the internet and the one you actually live)."
+    },
 ]

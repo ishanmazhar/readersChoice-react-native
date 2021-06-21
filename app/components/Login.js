@@ -77,7 +77,7 @@ const Login = props => {
                     if (password === confirmPassword) {
                         props.tryAuth(email, password, "signup");
                     } else {
-                        alert("Password fields doesn't Match!");
+                        alert("Password fields didn't match!");
                     }
                 }
             } else {
@@ -95,6 +95,7 @@ const Login = props => {
             <TextInput
                 style={styles.input}
                 placeholder="Confirm Password"
+                secureTextEntry={true}
                 value={authStates.inputs.confirmPassword}
                 onChangeText={value => updateInputs(value, "confirmPassword")}
             />
@@ -124,6 +125,7 @@ const Login = props => {
                 <TextInput
                     style={styles.input}
                     placeholder="Password"
+                    secureTextEntry={true}
                     value={authStates.inputs.password}
                     onChangeText={value => updateInputs(value, "password")}
                 />
